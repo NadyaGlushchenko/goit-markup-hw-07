@@ -1,0 +1,295 @@
+// стили героя индекс
+
+.hero {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header.jpg);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  &-title {
+    color: $text-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    margin: 0px;
+  }
+}
+.link-hero {
+  background: $background-color;
+  color: $text-color;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 46px;
+  border: 0px;
+  &:hover,
+  &:focus {
+    background-color: $text-color;
+    color: $background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+}
+
+// стили секции наши приоритеты
+
+.prioritiets {
+  display: flex;
+  & .item + .item {
+    margin-left: 30px;
+  }
+}
+.prioritets-list {
+  margin-bottom: 94px;
+}
+
+.icon {
+  margin-top: 94px;
+}
+
+.size-item {
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.item {
+  position: relative;
+}
+.backgr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-icon;
+  border-radius: 4px;
+  height: 120px;
+}
+.size {
+  width: 70px;
+  height: 70px;
+}
+.title-three {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.paragraf {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+// стили секции чем мы занимаемся
+
+// .border {
+//   border-top: 1px solid #ececec;
+// }
+.item-size {
+  width: calc((100% - 30px * 2) / 3);
+}
+.three {
+  position: absolute;
+  color: $text-color;
+  background: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 27px;
+  width: 100%;
+  bottom: 0;
+}
+
+// стили секции наша команда
+
+.fon {
+  background: $background-icon;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 50px;
+}
+
+.padding-title {
+  padding-top: 94px;
+}
+.comanda {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background: $text-color;
+  margin-bottom: 94px;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.prof {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.list {
+  display: inline-flex;
+  width: 206px;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-top: 16px;
+}
+.socset-item {
+  margin-bottom: 24px;
+  margin-right: 10px;
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
+}
+.socset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $background-color;
+  }
+}
+.socset-icon {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  fill: $color-icon-logo;
+  display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .socset:hover &,
+  .socset:focus & {
+    fill: $text-color;
+  }
+}
+
+// стили секции постоянные клиенты
+
+.backgrlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $color-icon-logo;
+  border-radius: 4px;
+  margin-bottom: 94px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $background-color;
+  }
+}
+.logoone {
+  fill: $color-icon-logo;
+  width: 44px;
+  height: 49px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backgrlogo:hover &,
+  .backgrlogo:focus & {
+    fill: $background-color;
+  }
+}
+
+.logotwo {
+  fill: $color-icon-logo;
+  width: 40px;
+  height: 52px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backgrlogo:hover &,
+  .backgrlogo:focus & {
+    fill: $background-color;
+  }
+}
+
+.logothree {
+  fill: $color-icon-logo;
+  width: 41px;
+  height: 42.5px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backgrlogo:hover &,
+  .backgrlogo:focus & {
+    fill: $background-color;
+  }
+}
+
+.logofoure {
+  fill: $color-icon-logo;
+  width: 79px;
+  height: 42px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backgrlogo:hover &,
+  .backgrlogo:focus & {
+    fill: $background-color;
+  }
+}
+
+.logofive {
+  fill: $color-icon-logo;
+  width: 59px;
+  height: 47px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backgrlogo:hover &,
+  .backgrlogo:focus & {
+    fill: $background-color;
+  }
+}
+
+.logosix {
+  fill: $color-icon-logo;
+  width: 88px;
+  height: 45px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .backgrlogo:hover &,
+  .backgrlogo:focus & {
+    fill: $background-color;
+  }
+}
+
+// .name-text {
+//   text-align: center;
+// }
